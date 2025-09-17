@@ -26,12 +26,12 @@
                 <RadioButton onAction="#onKekSelected" toggleGroup="$togglegroup_Szin">Kék</RadioButton>
             </VBox>
             <VBox prefWidth="150">
-                <RadioButton text="Négyzet">
+                <RadioButton onAction="#onNegyzetSelected" text="Négyzet">
                <toggleGroup>
                   <ToggleGroup fx:id="togglegroup_Alak" />
                </toggleGroup></RadioButton>
-                <RadioButton toggleGroup="$togglegroup_Alak">Kör</RadioButton>
-                <RadioButton id="pan" toggleGroup="$togglegroup_Alak">Háromszög</RadioButton>
+                <RadioButton onAction="#onKorSelected" toggleGroup="$togglegroup_Alak">Kör</RadioButton>
+                <RadioButton id="pan" onAction="#onHaromszogSelected" toggleGroup="$togglegroup_Alak">Háromszög</RadioButton>
             </VBox>
         </HBox>
       <Pane id="pane_Alakzat" fx:id="pane_Alakzat" prefHeight="200.0" prefWidth="200.0">
